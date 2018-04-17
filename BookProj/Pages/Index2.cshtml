@@ -1,0 +1,21 @@
+﻿
+@page
+@model Index2Model
+
+<table class="table">
+    <thead>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Book)
+        {
+        <tr>
+            <td>@item.Title</td>
+            <td>@Html.DisplayFor(m=>item.Price)</td>
+            <td>@Html.DisplayFor(m=>item.CheckedOut)</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+
